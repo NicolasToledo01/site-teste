@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula/html</title>
+    <style>
+        .menu{
+            display: none;
+        }
+        .menu-container nav {
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 0px 20px; /* Adiciona espaçamento interno */
+        }
+
+        .menu-options {
+            list-style-type: none; /* Remover os marcadores de lista */
+            display: flex;
+            gap: 70px; /* Espaçamento entre as opções */
+            text-transform: uppercase; /* Deixa as letras em maiúsculo */
+            margin-left: 40%;
+
+        }
+        .menu-options li{
+            font-family: arial;
+            
+        }
+        .menu-options li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; /* Ajusta o tamanho da fonte das opções */
+        
+        }
+
+        .menu-options li a:hover {
+            background-color: rgb(83, 161, 5);
+            border-radius: 15px;
+            padding: 10px 20px;
+            animation: changeColor 3s infinite;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: #0b0b0b;
+            }
+            25% {
+                background-color: #a3fcb6;
+            }
+            50% {
+                background-color: #8dd5f4;
+            }
+            75% {
+                background-color:  #c794ef;
+            }
+            100% {
+                background-color: #f39fdf;
+            }
+        }
+        img#icone {
+            width: 230px; 
+            height: 230px; 
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+        }
+
+        p {
+            font-family: 'Courier New';
+        }
+        body{
+            background-color: #dddddd;
+            font-family: 'Courier New', Courier, monospace;
+        }
+ 
+        header#cabecalho img#icone{
+            position: absolute;
+            left: 1075px;
+            top: 485px;
+        }
+        header#cabecalho{
+            border-bottom: 2px black solid;
+            height: 550px;
+            background: url("../_blog/lesson-6-hello-world-2.png")no-repeat 250px -5px ;
+        }
+.container-habilidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 320px;
+}
+.card h2{
+  font-size: 30px;
+  color: rgb(212, 219, 22);
+  text-shadow: 2px 2px 2px #000000;
+}
+.card p {
+  color: wheat;
+font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.card {
+  background-color: rgb(12, 11, 11);
+  display: flex;
+  width:700px;
+  margin: 15px;
+  align-items: center;
+  position: relative;
+  padding: 15px;
+  border: solid 4px #eafccb;
+  box-shadow: 5px 0px 10px #eafccb;
+  border-radius: 30px;
+  text-align: center;
+  transition: .8s;
+}
+.card img {
+  width: 140px;
+  border-radius: 25px;
+  background-color: white;
+  border: double 10px #000000;
+}
+.descricao-habilidade {
+  margin: 0px 15px;
+}
+
+.descricao-habilidade h2 {
+  color: rgb(252, 252, 131);
+  font-size: 2rem; /* Ajusta o tamanho da fonte do h2 */
+  font-weight: bold; /* Deixa o h2 em negrito */
+  margin: 0;
+}
+.descricao-habilidade p {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+span {
+  color: rgb(252, 252, 131);
+  text-shadow: 1px 1px 1px #000000;
+font-size: 1.5rem;
+font-weight: bold;
+margin: 10px 0;
+}
+
+.titulo h2 {
+  color: rgb(252, 252, 131);
+  font-size: 50px;
+  width: 100%;
+  margin: 0px auto 30px;
+  text-align: center;
+
+}
+.habilidades {
+  background-color: #0e0e14;
+  width: 100%;
+  padding: 100px 0;
+}
+.sobre {
+  background-color: #000000;
+  width: 100%;
+  padding: 170px 0;
+  border-bottom: solid 1px rgb(252, 252, 131);
+}
+.main-sobre {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1000px;
+  margin: auto;
+  gap: 50px;
+}
+.sobre img {
+  width: 250px;
+  border-radius: 50%;
+}
+.text-sobre {
+  width: 550px;
+}
+.text-sobre h2 {
+  color: rgb(252, 252, 131);
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin: 50px 0;
+}
+span {
+  color: rgb(252, 252, 131);
+  text-shadow: 1px 1px 1px #000000;
+}
+.text-sobre p {
+  margin: 0;
+  color: #f4e5d0;
+  font-size: 1.3rem;
+  line-height: 30px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.main {
+  position: absolute;
+  top: 40%;
+  left: 08%;
+}
+.main h4 {
+  color: #000000;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  margin: 0 0 -20px 0;
+}
+@media screen and (max-width: 1500px) {
+  .main h1 {
+    font-size: 5.4rem;
+  }
+}
+span {
+  color: rgb(229, 238, 107);
+  text-shadow: 0px 2px 2px #000000;
+}
+.main h3 {
+  color: #000000;
+  font-size: 2rem;
+  margin: -15px 0 0px 0;
+}
+a {
+  text-decoration: none;
+}
+#link1 {
+  width: 100%;
+  padding: 9px;
+  border: solid 3px #000000;
+  border-radius: 15px;
+  color: #f4e5d0;
+  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+  transition: .8s;
+  margin-top: 50px;
+}
+footer {
+  width: 100%;
+  background-color: rgb(218, 220, 192);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  padding-left: -100px;
+  padding-right: 8%;
+  padding-left: 8%;
+}
+.marca {
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+#logo2 {
+  height: 100px;
+}
+#registro {
+  color: black;
+  margin: 45px 15px;
+  font-size: 1rem;
+}
+.contatos {
+  border-left: solid 2px black;
+  padding-left: 30px;
+}
+.contatos a img {
+  height: 60px;
+  transition: 0.4s;
+}
+
+    </style>
+</head>
+
+<script>
+  function mudafoto(foto){
+    document.getElementById("icone").src = foto;
+    
+  }
+</script>
+<body>
+    <div id="interface">
+        <div class="menu-container">
+            <nav>
+                <div class="menu"><h1>Menu Principal</h1></div>
+                <ul class="menu-options">
+                    <li  onmouseover="mudafoto('logo-casa.png')" onmouseout="mudafoto('—Pngtree—eat beans free deduction elements_3079029.png')"><a href="aula-html.html">Home</a></li>
+                    <li  onmouseover="mudafoto('softskil.png')" onmouseout="mudafoto('—Pngtree—eat beans free deduction elements_3079029.png')"><a href="#">Soft Skills</a></li>
+                    <li  onmouseover="mudafoto('galeria1.png')" onmouseout="mudafoto('—Pngtree—eat beans free deduction elements_3079029.png')"><a href="#">Fotos</a></li>
+                    <li><a href="#">Interações</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <header id="cabecalho">     
+            
+            <img id="icone" src="—Pngtree—eat beans free deduction elements_3079029.png" alt="dragao">
+        </header>
+<div class="main">
+    
+    <br>
+    <h1>
+        Nicolas Toledo
+    </h1>
+    <br>
+    <h3>Desenvolvedor JR Full Stack</h3>
+    <a href="http://www.linkedin.com/in/nicolas-toledo0101" target="_blank">
+        <button id="link1">Linkedin</button>
+    </a>
+
+</div>
+
+
+        <header>
+       
+            
+            <figure >
+                
+                
+            </figure>
+            <br><br><br>
+          
+        </header>
+        <section id="section-sobre" class="sobre">
+            <div class="main-sobre"> 
+                <img id="foto" src="foto_minha.jpeg" alt="foto_minha">
+                <div class="text-sobre">
+                    <h2>
+                        Sobre
+                        Mim
+                    </h2>
+                    <p>
+                        Estou focado em ingressar no mercado de trabalho da área de tecnologia, dedicando-me 
+                        diariamente ao estudo e treinamento. Busco constantemente aprimorar minhas habilidades
+                         em diversas linguagens de programação, aproveitando as oportunidades oferecidas por 
+                         diferentes plataformas de cursos e aprendizado.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--separação-->
+
+        <section id="section-habilidades" class="habilidades">
+            <div class="titulo">
+                <h2>
+                    Soft Skills                    
+                </h2>
+            </div>
+<div class="container-habilidades">
+    <div id="card1" class="card"> 
+      <img src="icon-html.png" alt="icone-html">
+        <div class="descricao-habilidades">
+            <h2>HTML</h2>
+<P>
+    HTML é uma linguagem de marcação utilizada na construção de páginas na web.
+    documentos HTML podem ser interpetrados por navegadores.
+    <br>
+    <span>Nível: Intermediário</span>
+</P>
+        </div>
+    </div>
+    <!--separação-->
+    <div id="card2" class="card"> 
+        <img src="icons-css.png" alt="icone-css">
+        <div class="descricao-habilidades">
+            <h2>CSS</h2>
+<P>
+  o CSS permite controlar a aparência e o layout de um site, facilitando a
+   criação de páginas da web visualmente atraentes e responsivas. 
+   Ele funciona aplicando regras de estilo a elementos HTML.
+    <br>
+    <span>Nível: Intermediário</span>
+</P>
+        </div>
+    </div>
+    <!--separação-->
+    <div id="card3" class="card"> 
+        <img src="icon-javascript.png" alt="icone-javascript">
+        <div class="descricao-habilidades">
+            <h2>JAVASCRIPT</h2>
+<P>
+  JavaScript é usado para criar e manipular elementos de página web,
+   controlar comportamentos interativos, validar formulários, 
+   criar animações e muito mais. 
+    <br>
+    <span>Nível: Básico</span>
+</P>
+        </div>
+    </div>
+ <!--separação-->
+    <div id="card4" class="card"> 
+        <img src="icon-git.png" alt="icone-git">
+        <div class="descricao-habilidades">
+            <h2>GIT</h2>
+<P>
+  o Git é uma ferramenta essencial para o desenvolvimento de software colaborativo,
+   oferecendo controle preciso sobre o código-fonte e facilitando a colaboração 
+   entre desenvolvedores.
+    <br>
+    <span>Nível: Essencial</span>
+</P>
+        </div>
+    </div>
+ <!--separação-->
+ <div id="card5" class="card"> 
+    <img src="icons-github .png" alt="icone-github">
+    <div class="descricao-habilidades">
+        <h2>GITHUB</h2>
+<P>
+  o GitHub é uma plataforma essencial para o desenvolvimento de software colaborativo,
+   fornecendo uma infraestrutura robusta para hospedar, 
+   colaborar e compartilhar código-fonte.
+<br>
+<span>Nível: Essencial</span>
+</P>
+        </div>
+    </div>
+
+    <div id="card6" class="card"> 
+      <img src="tnc.png" alt="icone-c#">
+      <div class="descricao-habilidades">
+          <h2>C#</h2>
+  <P>
+    C# é uma linguagem de programação moderna e poderosa, amplamente utilizada
+     para desenvolver uma ampla gama de aplicativos em diferentes plataformas,
+      com uma forte ênfase em segurança, desempenho e produtividade do desenvolvedor.
+  <br>
+  <span>Nível: Básico</span>
+  </P>
+          </div>
+      </div>
+
+      <div id="card7" class="card"> 
+        <img src="mysql-backup.png" alt="icone-sql">
+        <div class="descricao-habilidades">
+            <h2>My SQL</h2>
+    <P>
+      O MySQL é um sistema de gerenciamento de banco de dados usado 
+      para armazenar e organizar dados de forma eficiente. Ele usa a
+       linguagem SQL para consultar e manipular esses dados. 
+    <br>
+    <span>Nível: Básico</span>
+    </P>
+            </div>
+        </div>
+</div>
+</section>
+       
+
+<footer id="section-rodape">
+    <nav>
+        <div class="marca">
+           <img id="logo2" src="Pac_Man.svg.png" alt="logo2">
+           <h4 id="registro">
+
+            copyright&copy; 2024 - by Nicolas Dos Santos Toledo           </h4>
+        </div>
+<address class="contatos">
+    <a href="http://www.linkedin.com/in/nicolas-toledo0101" target="_blank">
+<img src="linkedIn_PNG18.png" alt="linkedin-nicolas">
+    </a>
+
+</address>
+    </nav>
+
+</footer>
+
+
+        
+    </div>
+   
+</body>
+</html>
