@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul#galeria{
+        width: 700px;
+        margin: 0 auto;
+        padding: 50px;
+        overflow: hidden;
+        list-style: none;
+    }
+    ul#galeria li {
+        float: left;
+        width: 200px;
+height: 200px;
+margin: 10px;
+border: solid 5px rgb(245, 245, 245);
+background-color: rgb(249, 249, 248);
+box-shadow: 1px 1px 5px rgb(4, 4, 4);
+    }
+    ul#galeria li#foto1{
+        background: url('icon-html.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: white ;
+    }
+    ul#galeria li#foto1:hover{
+background-position: 0px 0px;
+background-size: 200px 200px;
+    }
+    ul#galeria li#foto2{
+        background: url('tnc.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: white ;
+    }
+    ul#galeria li#foto2:hover{
+background-position: 0px 0px;
+background-size: 200px 200px;
+    }
+    ul#galeria li#foto3{
+        background: url('icons-css.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: white ;
+    }
+    ul#galeria li#foto3:hover{
+background-position: 0px 0px;
+background-size: 200px 200px;
+    }
+    ul#galeria li#foto4{
+        background: url('icon-javascript.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: white ;
+    }
+    ul#galeria li#foto4:hover{
+background-position: 0px 0px;
+background-size: 200px 200px;
+    }
+    ul#galeria li#foto5{
+        background: url('Pac_Man.svg.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: white ;
+    }
+    ul#galeria li#foto5:hover{
+background-position: 0px 0px;
+background-size: 200px 200px;
+    }
+    ul#galeria li#foto6{
+        background: url('—Pngtree—chinese dragon traditional spring festival_13518561.png') no-repeat;
+        background-position: 50% 50%;
+        background-size: 400px 400px;
+        background-color: white ;
+    }
+    ul#galeria li#foto6:hover{
+background-position: 0px 0px;
+background-size: 200px 200px;
+    }
+    ul#galeria li:hover{
+        transition: all .5s ease-in; 
+        transform:scale(1.5);
+    }
+    ul#galeria li span{
+        opacity: 0;
+        color: aliceblue;
+        box-shadow: 1px 1px 1px black;
+        background-color: rgba(0,0,0.3);
+        line-height: 370px;
+        padding: 5px;
+        font-size: 11pt;
+    }
+    ul#galeria li:hover span{
+        opacity: 1;
+        transition-duration: 2s;
+
+    }
+</style>
+<body>
+    <UL id="galeria">
+        <li id="foto1"><span>alguma coisa</span></li>
+        <li id="foto2"><span>alguma coisa</span></li>
+        <li id="foto3"><span>alguma coisa</span></li>
+        <li id="foto4"><span>alguma coisa</span></li>
+        <li id="foto5"><span>alguma coisa</span></li>
+        <li id="foto6"><span>alguma coisa</span></li>
+
+    </UL>
+
+    <form action="">
+       <fieldset id="usuario"> identificação do usuario </fieldset>
+          <p>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="25" placeholder="nome completo"></p>  
+          <p>senha: <input type="password" name="tsenha" id="csenha" size="9" maxlength="8" placeholder="senha 8 digitos"></p>  
+          <p>e-mail: <input type="email" name="cemail" id="cemail" placeholder="digite seu email" size="25" maxlength="25"></p>  
+          <fieldset id="sexo"><legend>sexo </legend>
+                
+               <input type="radio" name="tsexo" id="masc"> <label for="masc">masculino</label>
+               <input type="radio" name="tsexo" id="fem"> <label for="fem">feminino</label></fieldset>
+            <p>data de nascimento: <input type="date" name="nascimento" id="cdata" placeholder="data nascimento"></p> 
+
+        <fieldset id="endereço"><legend>Endereço do úsuario </legend>
+        
+            <p>logradouro <input type="text" name="ccasa" id="ccasa" placeholder="logradouro"></p>
+            <p>numero <input type="number" name="cnumero" id="cnumero" placeholder="Telefone"></p>
+            <p>estado <input type="text" name="cestado" id="cestado" placeholder="Estado"></p>
+            <p>cidade <input type="text" name="ccidade" id="ccidade" placeholder="Cidade"></p>
+        </fieldset>
+
+        <fieldset id="mensagem"><legend>mensagem do usuario </legend>
+ 
+            <p>grau de urgencia:<input type="text" name="curgencia" id="curgencia" placeholder="grau de urgencia"></p>
+            <p>mensagem:<input type="text" name="cmensagem" id="cmensagem" placeholder="mensagem"></p>
+        </fieldset>
+        <p>quero um corte de cabelo</p>
+            <p>gostaria de cortar o cabelo quando disponivel</p>
+            <p>corte:</p>
+            <p>preço total: R$</p>
+
+        botao enviar
+
+    </form>
+</body>
+</html>
